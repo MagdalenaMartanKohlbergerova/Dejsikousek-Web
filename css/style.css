@@ -413,6 +413,12 @@ main .container-lemonade a:hover {
    color: #82A3AC;
 }
 
+.container-cakes{
+   height: 50vh;
+   background-image: url(../img/dorticky.jpg);
+   background-position: center;
+   background-size: cover;
+}
 
 .container-photogallery .grid-area {
    display: grid;
@@ -446,19 +452,14 @@ main .container-lemonade a:hover {
       object-fit: cover;
    }
 
-   .container-photogallery .grid-area article.colorblock1 {
+   /* .container-photogallery .grid-area article.colorblock1 {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: beige;
    }
 
-   .container-photogallery .grid-area article.colorblock1 h3 {
-      text-align: center;
-      font-size: 5vw;
-      color: #82A3AC;
-      transform: rotate(-7deg);
-      font-weight: bold;
-   }
+ 
 
    
 
@@ -467,7 +468,7 @@ main .container-lemonade a:hover {
       flex-direction: column;
       justify-content: center;
       align-content: center;
-      background-color: beige;
+      background-color: beige; */
 
       /* h3 {
          font-size: 60px;
@@ -485,23 +486,49 @@ main .container-lemonade a:hover {
       button {
          display: inline-block;
       } */
+   /* } */
+
+   .colorblock{
+      background-image: url(../img/Dortiky2.jpg);
+      background-position: center;
+      background-size: cover;
    }
 
-   .container-photogallery .grid-area article.colorblock2 h3 {
+   .colorblock1{
+      height: 100%;
+      width: 100%;
+      background-color: #d1aca584;
+   }
+
+   .colorblock1 h2{
       font-size: 60px;
-      color: #BFDAFB;
+      color: white;
       transform: rotate(-7deg);
       font-weight: bold;
-      margin-block-end: 30px;
-      text-align: center;
    }
 
-   .container-photogallery .grid-area article.colorblock2 p {
-      text-align: center;
+   .colorblock2{
+      background-image: url(../img/Dortiky1.jpg);
+      background-position: center;
+      background-size: cover;
    }
 
-   .container-photogallery .grid-area article.colorblock2 button {
-      display: inline-block;
+   .colorblock3{
+      height: 100%;
+      width: 100%;
+      background-color: #e6cfda8b;
+   }
+
+   .colorblock4{
+      background-image: url(../img/Dortiky.jpg);
+      background-position: center;
+      background-size: cover;
+   }
+
+   .colorblock5{
+      height: 100%;
+      width: 100%;
+      background-color: #bfdae05f;
    }
 
 
