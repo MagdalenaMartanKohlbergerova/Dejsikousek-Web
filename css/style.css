@@ -31,7 +31,7 @@ menu {
    display: flex;
    flex-direction: column;
 
-   .logo {
+   /* .logo {
       display: flex;
       background-color: #A9C7C5;
       color: white;
@@ -75,7 +75,49 @@ menu {
             transition: all 0.5s;
          }
       }
-   }
+   } */
+}
+
+header menu .logo {
+   display: flex;
+   background-color: #A9C7C5;
+   color: white;
+   justify-content: space-between;
+   align-items: center;
+   padding-inline: 30px;
+}
+
+header menu .logo a {
+   text-decoration: none;
+   color: white;
+}
+
+header menu .logo a .fa-phone {
+   padding-inline-start: 30px;
+   font-size: 25px;
+}
+
+header menu .logo h3 {
+   font-size: 25px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   padding-block: 20px;
+}
+
+header menu .logo a i {
+   font-size: 25px;
+   color: white;
+   padding-inline: 5px;
+}
+
+header menu .logo a i.fa-facebook:hover{ 
+      color: #FADCE4;
+      transition: all 0.5s;  
+}
+
+header menu .logo a i.fa-instagram:hover {
+      color: #adece9;
+      transition: all 0.5s;
 }
 
 header .container {
@@ -206,13 +248,12 @@ main section .coffee-container {
 
 main section .coffee-container .left {
    width: 50%;
-   /* background-color: #FBF9F6; */
    background-color: #e9c69c;
    display: flex;
    flex-direction: column;
    justify-content: center;
 
-   button {
+   /* button {
       background-color: white;
       color: #BA6C46;
       padding: 20px;
@@ -231,7 +272,28 @@ main section .coffee-container .left {
          background-color: #BA6C46;
          transition: all 1s;
       }
-   }
+   } */
+}
+
+main section .coffee-container .left button {
+   background-color: white;
+   color: #BA6C46;
+   padding: 20px;
+   font-size: 15px;
+   font-weight: bold;
+   border: none;
+   margin-block-start: 30px;
+   cursor: pointer;
+   width: 155px;
+   text-transform: uppercase;
+   transition: all 1s;
+}
+
+main section .coffee-container .left button:hover {
+   color: white;
+   letter-spacing: 1px;
+   background-color: #BA6C46;
+   transition: all 1s;
 }
 
 main section .coffee-container .right {
@@ -280,7 +342,7 @@ main .container-lemonade {
    align-items: center;
    justify-content: space-around;
 
-   .lemonade-title {
+   /* .lemonade-title {
       font-size: 40px;
       color: #D1ACA5;
    }
@@ -310,8 +372,40 @@ main .container-lemonade {
          background-color: #F9E5E0;
          color: #82A3AC;
       }
-   }
+   } */
 }
+
+main .container-lemonade .lemonade-title {
+   font-size: 40px;
+   color: #D1ACA5;
+}
+
+main .container-lemonade p {
+   line-height: 150%;
+   margin-block-start: 10px;
+   width: 50vw;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+main .container-lemonade a {
+   color: white;
+   background-color: #82A3AC;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition: all 1s;
+   width: 15vw;
+   padding: 20px;
+   text-align: center;
+}
+
+main .container-lemonade a:hover {
+   letter-spacing: 1px;
+   background-color: #F9E5E0;
+   color: #82A3AC;
+}
+
 
 .container-photogallery .grid-area {
    display: grid;
@@ -319,14 +413,13 @@ main .container-lemonade {
    grid-template-rows: repeat(2, minmax(0, 1fr));
    height: 900px;
 
-   img {
+   /* img {
       width: 100%;
       height: 100%;
       object-fit: cover;
    }
 
    article.colorblock1 {
-      /* background-color: #D7E7E9; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -334,13 +427,33 @@ main .container-lemonade {
       h3 {
          text-align: center;
          font-size: 60px;
-         /* color: #BFDAFB; */
          color: #82A3AC;
          transform: rotate(-7deg);
-         /* text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.374); */
          font-weight: bold;
-      }
+      } */
    }
+
+   .container-photogallery .grid-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   .container-photogallery .grid-area article.colorblock1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .container-photogallery .grid-area article.colorblock1 h3 {
+      text-align: center;
+      font-size: 60px;
+      color: #82A3AC;
+      transform: rotate(-7deg);
+      font-weight: bold;
+   }
+
+   
 
    article.colorblock2 {
       display: flex;
