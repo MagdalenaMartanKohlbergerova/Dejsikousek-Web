@@ -240,14 +240,21 @@ main .container-about a:hover {
    background-color: #82A3AC;
 }
 
-main section .coffee-container {
+/* main section .coffee-container {
    display: flex;
    flex-direction: row-reverse;
+   height: 400px;
+} */
+
+main section .coffee-container {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   grid-template-rows: repeat(1, minmax(0, 1fr));
    height: 400px;
 }
 
 main section .coffee-container .left {
-   width: 50%;
+   /* width: 50%; */
    background-color: #e9c69c;
    display: flex;
    flex-direction: column;
@@ -297,7 +304,7 @@ main section .coffee-container .left button:hover {
 }
 
 main section .coffee-container .right {
-   width: 50%;
+   /* width: 50%; */
    background-image: url(../img/latte-art.jpg);
    background-position: 50% 50%;
    background-size: cover;
@@ -447,7 +454,7 @@ main .container-lemonade a:hover {
 
    .container-photogallery .grid-area article.colorblock1 h3 {
       text-align: center;
-      font-size: 60px;
+      font-size: 5vw;
       color: #82A3AC;
       transform: rotate(-7deg);
       font-weight: bold;
@@ -462,11 +469,10 @@ main .container-lemonade a:hover {
       align-content: center;
       background-color: beige;
 
-      h3 {
+      /* h3 {
          font-size: 60px;
          color: #BFDAFB;
          transform: rotate(-7deg);
-         /* text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.374); */
          font-weight: bold;
          margin-block-end: 30px;
          text-align: center;
@@ -478,10 +484,27 @@ main .container-lemonade a:hover {
 
       button {
          display: inline-block;
-      }
+      } */
    }
 
-}
+   .container-photogallery .grid-area article.colorblock2 h3 {
+      font-size: 60px;
+      color: #BFDAFB;
+      transform: rotate(-7deg);
+      font-weight: bold;
+      margin-block-end: 30px;
+      text-align: center;
+   }
+
+   .container-photogallery .grid-area article.colorblock2 p {
+      text-align: center;
+   }
+
+   .container-photogallery .grid-area article.colorblock2 button {
+      display: inline-block;
+   }
+
+
 
 /* FOOTER */
 
@@ -552,14 +575,23 @@ footer .hours th {
       flex-direction: column;
       width: min-content;
 
-      p {
+      /* p {
          width: 70vw;
       }
 
       a {
          margin-block-start: 10px;
          align-self: end;
-      }
+      } */
+   }
+
+   main .container-lemonade p {
+      width: 70vw;
+   }
+
+   main .container-lemonade a {
+      margin-block-start: 10px;
+      align-self: end;
    }
 }
 
@@ -622,71 +654,45 @@ footer .hours th {
 
    /* MAIN */
 
+   main section .coffee-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      height: 800px;
+   }
+
+   .container-photogallery .grid-area article.colorblock1 h3 {
+      font-size: 8vw;
+   }
+/* 
    main section .coffee-container .right {
       width: 20%;
    }
 
    main section .coffee-container .left {
-      width: 80%;
+      width: 80%; */
 
-      button {
+      /* button {
          width: 20vw;
-      }
+      } */
+   /* } */
+
+   main section .coffee-container .left button {
+      width: 20vw;
    }
 
    main section .coffee-container .right .line {
       display: none;
    }
 
-   .container-photogallery .grid-area {
+   /* .container-photogallery .grid-area {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       grid-template-rows: repeat(4, minmax(0, 1fr));
       height: auto;
       row-gap: 10px;
+   } */
 
 
-      img {
-         /* width: 350px; */
-         margin: 0 auto;
-      }
-   }
-
-   .container-offer>div {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-      width: 80%;
-      margin: 0 auto;
-   }
-
-   .cakes {
-      flex-direction: column;
-      height: max-content;
-
-      .cake1 {
-         height: 300px;
-         width: 100%;
-      }
-
-      article {
-         width: fit-content;
-         height: 300px;
-         text-align: center;
-
-         h3 {
-            margin-block-start: 20px;
-         }
-
-         p {
-            width: 70%;
-            margin: 0 auto;
-         }
-
-         button {
-            width: 20vw;
-            margin: 0 auto;
-
-         }
-      }
-   }
+   
 }
 
 
