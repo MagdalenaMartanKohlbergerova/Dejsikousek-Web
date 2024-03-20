@@ -283,8 +283,8 @@ main section .coffee-container .left {
 }
 
 main section .coffee-container .left button {
-   background-color: white;
-   color: #BA6C46;
+   color: white;
+   background-color: #BA6C46;
    padding: 20px;
    font-size: 15px;
    font-weight: bold;
@@ -297,9 +297,9 @@ main section .coffee-container .left button {
 }
 
 main section .coffee-container .left button:hover {
-   color: white;
+   background-color: white;
+   color: #BA6C46;
    letter-spacing: 1px;
-   background-color: #BA6C46;
    transition: all 1s;
 }
 
@@ -653,6 +653,19 @@ footer .hours th {
    footer nav ul > .call{
       flex-wrap: wrap;
    }
+
+   footer .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+   
+   footer nav ul{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
 }
 
 @media (min-width:700px) {
@@ -740,9 +753,9 @@ footer .hours th {
       } */
    /* } */
 
-   /* main section .coffee-container .left button {
-      width: 25vw;
-   } */
+   main section .coffee-container .left button {
+      width: 35vw;
+   }
 
    main section .coffee-container .right .line {
       display: none;
