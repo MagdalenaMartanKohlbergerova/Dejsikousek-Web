@@ -532,7 +532,6 @@ main .container-lemonade a:hover {
    }
 
 
-
 /* FOOTER */
 
 footer {
@@ -540,16 +539,33 @@ footer {
    background-position: center;
    background-size: cover;
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   padding: 40px;
+   /* padding: 40px; */
 }
 
 footer .container {
    display: flex;
-   width: 1000px;
+   width: 700px;
+   margin: 0 auto;
    justify-content: space-around;
-   padding-block: 50px;
+   padding-block-start: 6rem;
+   padding-block-end: 5rem;
    color: white;
+}
+
+footer nav ul{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   /* justify-content: center; */
+   justify-content: center;
+   background-color: #a9c7c5ad;
+   padding-block: 10px; 
+}
+
+footer nav ul li{
+   padding-inline: 3rem;
 }
 
 footer a {
@@ -580,8 +596,19 @@ footer .hours th {
       grid-template-rows: repeat(3, minmax(0, 1fr));
       height: 900px;
    }
-}
 
+   .colorblock3{
+      background-color: transparent;
+   }
+
+   .mob-none{
+      display: none;
+   }
+
+   .container-about.lemonade{
+      margin-block-start: -15rem
+   }
+}
 
 @media (max-width: 1012px) {
    main .container-about {
@@ -619,6 +646,12 @@ footer .hours th {
    main .container-lemonade a {
       margin-block-start: 10px;
       align-self: end;
+   }
+}
+
+@media (max-width:800px){
+   footer nav ul > .call{
+      flex-wrap: wrap;
    }
 }
 
@@ -663,11 +696,11 @@ footer .hours th {
    }
 
    header .nadpis {
-      margin-block-start: 100px;
+      margin-block-start: 150px;
    }
 
    header .nadpis h2 {
-      font-size: 17vw;
+      font-size: 19vw;
    }
 
    header .nadpis h3 {
@@ -680,6 +713,10 @@ footer .hours th {
    }
 
    /* MAIN */
+
+   main .container-about a {
+      width: 25vw;
+  }
 
    main section .coffee-container {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -704,7 +741,7 @@ footer .hours th {
    /* } */
 
    main section .coffee-container .left button {
-      width: 20vw;
+      width: 25vw;
    }
 
    main section .coffee-container .right .line {
