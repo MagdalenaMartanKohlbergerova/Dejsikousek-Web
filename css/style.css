@@ -259,27 +259,35 @@ main section .coffee-container .left {
    display: flex;
    flex-direction: column;
    justify-content: center;
+}
 
-   /* button {
-      background-color: white;
-      color: #BA6C46;
-      padding: 20px;
-      font-size: 15px;
-      font-weight: bold;
-      border: none;
-      margin-block-start: 30px;
-      cursor: pointer;
-      width: 155px;
-      text-transform: uppercase;
-      transition: all 1s;
+main section .container-lemonade{
+   display: flex;
+   width: 1000px;
+   margin: 0 auto;
+   padding-block: 70px;
+   align-items: center;
+   justify-content: space-around;
+}
 
-      &:hover {
-         color: white;
-         letter-spacing: 1px;
-         background-color: #BA6C46;
-         transition: all 1s;
-      }
-   } */
+main section .container-about.lemonade h4 {
+   color: #E5C1CD;
+}
+
+main section .container-about.lemonade a{
+   color: white;
+   background-color: #82A3AC;
+}
+
+main section .container-about.lemonade a:hover{
+   letter-spacing: 1px;
+   background-color: #F9E5E0;
+   color: #82A3AC
+}
+
+main section .container-lemonade div{
+   /* display: flex; */
+   /* flex-direction: column; */
 }
 
 main section .coffee-container .left button {
@@ -342,12 +350,12 @@ main section .coffee-container .right .line {
 
 
 main .container-lemonade {
-   display: flex;
+   /* display: flex;
    width: 1000px;
    margin: 0 auto;
    padding-block: 70px;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-around; */
 
    /* .lemonade-title {
       font-size: 40px;
@@ -382,7 +390,7 @@ main .container-lemonade {
    } */
 }
 
-main .container-lemonade .lemonade-title {
+/* main .container-lemonade .lemonade-title {
    font-size: 40px;
    color: #D1ACA5;
 }
@@ -393,9 +401,9 @@ main .container-lemonade p {
    width: 50vw;
    align-content: center;
    flex-wrap: wrap;
-}
+} */
 
-main .container-lemonade a {
+/* main .container-lemonade a {
    color: white;
    background-color: #82A3AC;
    text-decoration: none;
@@ -405,17 +413,17 @@ main .container-lemonade a {
    width: 15vw;
    padding: 20px;
    text-align: center;
-}
+} */
 
-main .container-lemonade a:hover {
+/* main .container-lemonade a:hover {
    letter-spacing: 1px;
    background-color: #F9E5E0;
    color: #82A3AC;
-}
+} */
 
 .container-cakes{
    height: 50vh;
-   background-image: url(../img/dorticky.jpg);
+   background-image: url(../img/pala.jpg);
    background-position: center;
    background-size: cover;
 }
@@ -489,7 +497,7 @@ main .container-lemonade a:hover {
    /* } */
 
    .colorblock{
-      background-image: url(../img/Dortiky2.jpg);
+      background-image: url(../img/wedding7.jpg);
       background-position: center;
       background-size: cover;
    }
@@ -497,7 +505,7 @@ main .container-lemonade a:hover {
    .colorblock1{
       height: 100%;
       width: 100%;
-      background-color: #d1aca584;
+      background-color: #bfdae05f;
    }
 
    .colorblock1 h2{
@@ -508,7 +516,7 @@ main .container-lemonade a:hover {
    }
 
    .colorblock2{
-      background-image: url(../img/Dortiky1.jpg);
+      background-image: url(../img/yum3.jpg);
       background-position: center;
       background-size: cover;
    }
@@ -516,11 +524,11 @@ main .container-lemonade a:hover {
    .colorblock3{
       height: 100%;
       width: 100%;
-      background-color: #e6cfda8b;
+      background-color: #bfdae05f;
    }
 
    .colorblock4{
-      background-image: url(../img/Dortiky.jpg);
+      background-image: url(../img/yum2.jpg);
       background-position: center;
       background-size: cover;
    }
@@ -643,8 +651,8 @@ footer .hours th {
       display: none;
    }
 
-   .container-about.lemonade{
-      margin-block-start: -18rem
+   main section .container-about.lemonade{
+      margin-block-start: -19rem;
    }
 }
 
@@ -663,9 +671,12 @@ footer .hours th {
       align-self: end;
    }
 
-   main .container-lemonade {
+  
+   }
+
+   /* main .container-lemonade {
       flex-direction: column;
-      width: min-content;
+      width: min-content; */
 
       /* p {
          width: 70vw;
@@ -675,17 +686,17 @@ footer .hours th {
          margin-block-start: 10px;
          align-self: end;
       } */
-   }
+   
 
-   main .container-lemonade p {
+   /* main .container-lemonade p {
       width: 70vw;
    }
 
    main .container-lemonade a {
       margin-block-start: 10px;
       align-self: end;
-   }
-}
+   } */
+/* } */
 
 @media (max-width:800px){
    footer nav ul > .call{
