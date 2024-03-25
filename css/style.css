@@ -168,6 +168,25 @@ header .container nav ul {
    column-gap: 20px;
 }
 
+header .container nav ul .strawberry{
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   margin-block-start: -3rem;
+   border: 2px solid white;
+}
+
+header .container nav ul .strawberry img{
+   width: 100%;
+   border-radius: 50%;
+   transition: all 2s;
+}
+
+header .container nav ul .strawberry img:hover{
+   transform: rotate(90deg);
+   transition: all 1.2s;
+}
+
 header .container nav ul li a {
    color: white;
    text-decoration: none;
@@ -239,6 +258,7 @@ main .container-about a:hover {
    color: white;
    background-color: #82A3AC;
 }
+
 
 /* main section .coffee-container {
    display: flex;
@@ -554,7 +574,7 @@ footer {
 
 footer .container {
    display: flex;
-   width: 700px;
+   width: 500px;
    margin: 0 auto;
    justify-content: space-around;
    padding-block-start: 6rem;
@@ -562,6 +582,17 @@ footer .container {
    color: white;
 }
 
+footer .container .hours {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+
+
+footer iframe{
+   width: 150px;
+   height: 150px;
+}
 footer h3{
    font-weight: bold;
    letter-spacing: 1px;
@@ -588,12 +619,19 @@ footer a {
 }
 
 footer a:hover {
-   text-decoration: underline;
+   color: #FADCE4;
+   transition: all 0.5s;
 }
+
+   
 
 footer h3 {
    font-size: 1.5em;
    margin-block-end: 0.5em;
+}
+
+footer .hours .call{
+   color: #4c91a6;
 }
 
 footer .hours th {
@@ -603,20 +641,18 @@ footer .hours th {
 }
 
 .container .hours table{
-   color:#82A3AC
+   color:#4c91a6;
 }
 
-.container .kontakt address a{
-   color:#82A3AC
+
+
+.container .hours a{
+   color:#4c91a6;
 }
 
-.container .call a{
-   color:#82A3AC
-}
-
-.container .call a i{
+.container .hours a i{
    font-size: 30px;
-   padding-block-start: 10px;
+   /* padding-block-start: 30px; */
    padding-inline-end: 10px;
 }
 
@@ -765,6 +801,11 @@ footer .hours th {
 
    header nav ul li a {
       line-height: 30px;
+   }
+
+   header .container nav ul .strawberry{
+      
+      margin-block-start: 0rem;
    }
 
    header .container .logo a {
