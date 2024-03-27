@@ -19,6 +19,17 @@ h6 {
 
 /*HEADER */
 
+
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   grid-template-rows: repeat(3, minmax(0, 1fr));
+   height: 600px;
+   row-gap: 10px;
+   column-gap: 10px;
+   text-align: center;
+}
+
 header {
    background-image: url(../img/hero-pastel.jpg);
    background-repeat: no-repeat;
@@ -31,51 +42,6 @@ menu {
    display: flex;
    flex-direction: column;
 
-   /* .logo {
-      display: flex;
-      background-color: #A9C7C5;
-      color: white;
-      justify-content: space-between;
-      align-items: center;
-      padding-inline: 30px;
-
-      a {
-         text-decoration: none;
-         color: white;
-
-         .fa-phone {
-            padding-inline-start: 30px;
-            font-size: 25px;
-         }
-      }
-
-      h3 {
-         font-size: 25px;
-         font-weight: bold;
-         letter-spacing: 1px;
-         padding-block: 20px;
-      }
-
-      a i {
-         font-size: 25px;
-         color: white;
-         padding-inline: 5px;
-      }
-
-      a i.fa-facebook {
-         &:hover {
-            color: #FADCE4;
-            transition: all 0.5s;
-         }
-      }
-
-      a i.fa-instagram {
-         &:hover {
-            color: #adece9;
-            transition: all 0.5s;
-         }
-      }
-   } */
 }
 
 header menu .logo {
@@ -125,36 +91,6 @@ header .container {
    justify-content: space-between;
    justify-content: center;
    background-color: #a9c7c592;
-
-   /* nav {
-      display: flex;
-      align-items: center;
-
-      ul {
-         list-style: none;
-         display: flex;
-         column-gap: 20px;
-
-         li {
-            a {
-               color: white;
-               text-decoration: none;
-               font-size: 15px;
-               letter-spacing: 1px;
-               padding-inline: 30px;
-               line-height: 35px;
-               text-transform: lowercase;
-               transition: all 0.5s;
-
-               &:hover {
-                  color: #FADCE4;
-                  transition: all 0.5s;
-               }
-            }
-         }
-
-      }
-   } */
 }
 
 header .container nav {
@@ -191,9 +127,10 @@ header .container nav ul li a {
    color: white;
    text-decoration: none;
    font-size: 15px;
+   font-weight: bold;
    letter-spacing: 1px;
    padding-inline: 30px;
-   line-height: 35px;
+   line-height: 45px;
    text-transform: lowercase;
    transition: all 0.5s;
 }
@@ -259,13 +196,6 @@ main .container-about a:hover {
    background-color: #82A3AC;
 }
 
-
-/* main section .coffee-container {
-   display: flex;
-   flex-direction: row-reverse;
-   height: 400px;
-} */
-
 main section .coffee-container {
    display: grid;
    grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -274,7 +204,6 @@ main section .coffee-container {
 }
 
 main section .coffee-container .left {
-   /* width: 50%; */
    background-color: #e9c69c;
    display: flex;
    flex-direction: column;
@@ -305,11 +234,6 @@ main section .container-about.lemonade a:hover{
    color: #82A3AC
 }
 
-main section .container-lemonade div{
-   /* display: flex; */
-   /* flex-direction: column; */
-}
-
 main section .coffee-container .left button {
    color: white;
    background-color: #BA6C46;
@@ -332,7 +256,6 @@ main section .coffee-container .left button:hover {
 }
 
 main section .coffee-container .right {
-   /* width: 50%; */
    background-image: url(../img/latte-art.jpg);
    background-position: 50% 50%;
    background-size: cover;
@@ -368,79 +291,6 @@ main section .coffee-container .right .line {
    padding-inline-end: 30px;
 }
 
-
-main .container-lemonade {
-   /* display: flex;
-   width: 1000px;
-   margin: 0 auto;
-   padding-block: 70px;
-   align-items: center;
-   justify-content: space-around; */
-
-   /* .lemonade-title {
-      font-size: 40px;
-      color: #D1ACA5;
-   }
-
-   p {
-      line-height: 150%;
-      margin-block-start: 10px;
-      width: 50vw;
-      align-content: center;
-      flex-wrap: wrap;
-
-   }
-
-   a {
-      color: white;
-      background-color: #82A3AC;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 1s;
-      width: 15vw;
-      padding: 20px;
-      text-align: center;
-
-      &:hover {
-         letter-spacing: 1px;
-         background-color: #F9E5E0;
-         color: #82A3AC;
-      }
-   } */
-}
-
-/* main .container-lemonade .lemonade-title {
-   font-size: 40px;
-   color: #D1ACA5;
-}
-
-main .container-lemonade p {
-   line-height: 150%;
-   margin-block-start: 10px;
-   width: 50vw;
-   align-content: center;
-   flex-wrap: wrap;
-} */
-
-/* main .container-lemonade a {
-   color: white;
-   background-color: #82A3AC;
-   text-decoration: none;
-   font-weight: bold;
-   text-transform: uppercase;
-   transition: all 1s;
-   width: 15vw;
-   padding: 20px;
-   text-align: center;
-} */
-
-/* main .container-lemonade a:hover {
-   letter-spacing: 1px;
-   background-color: #F9E5E0;
-   color: #82A3AC;
-} */
-
 .container-cakes{
    height: 50vh;
    background-image: url(../img/pala.jpg);
@@ -453,25 +303,9 @@ main .container-lemonade p {
    grid-template-columns: repeat(3, minmax(0, 1fr));
    grid-template-rows: repeat(2, minmax(0, 1fr));
    height: 900px;
-
-   /* img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-   }
-
-   article.colorblock1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      h3 {
-         text-align: center;
-         font-size: 60px;
-         color: #82A3AC;
-         transform: rotate(-7deg);
-         font-weight: bold;
-      } */
+   column-gap: 5px;
+   row-gap: 5px;
+   padding-block-start: 5px;
    }
 
    .container-photogallery .grid-area img {
@@ -479,42 +313,6 @@ main .container-lemonade p {
       height: 100%;
       object-fit: cover;
    }
-
-   /* .container-photogallery .grid-area article.colorblock1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: beige;
-   }
-
- 
-
-   
-
-   article.colorblock2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      background-color: beige; */
-
-      /* h3 {
-         font-size: 60px;
-         color: #BFDAFB;
-         transform: rotate(-7deg);
-         font-weight: bold;
-         margin-block-end: 30px;
-         text-align: center;
-      }
-
-      p {
-         text-align: center;
-      }
-
-      button {
-         display: inline-block;
-      } */
-   /* } */
 
    .colorblock{
       background-image: url(../img/wedding7.jpg);
@@ -559,6 +357,33 @@ main .container-lemonade p {
       background-color: #bfdae05f;
    }
 
+   .container-offer{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(1, minmax(0, 1fr));
+      height: 350px;
+      column-gap: 5px;
+      padding-block: 5px;
+   }
+
+   .container-offer .grid-item1{
+      padding-inline: 5rem;
+      padding-block: 5rem;
+      grid-column: 1/3;
+      grid-row: 1/2;
+   }
+
+   .container-offer .grid-item1 p{
+      line-height: 150%;
+      color: black;
+   }
+
+   .container-offer .grid-item2{
+      background-image:url(../img/poukazy.jpg);
+      background-size: cover;
+      background-position: center;
+   }
+
 
 /* FOOTER */
 
@@ -569,7 +394,6 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   /* padding: 40px; */
 }
 
 footer .container {
@@ -588,7 +412,6 @@ footer .container .hours {
    row-gap: 20px;
 }
 
-
 footer iframe{
    width: 150px;
    height: 150px;
@@ -602,7 +425,6 @@ footer nav ul{
    display: flex;
    flex-direction: row;
    width: 100%;
-   /* justify-content: center; */
    justify-content: center;
    background-color: #a9c7c5ad;
    padding-block: 10px; 
@@ -615,6 +437,7 @@ footer nav ul li{
 footer a {
    color: white;
    text-decoration: none;
+   font-weight: bold;
    line-height: 150%;
 }
 
@@ -622,8 +445,6 @@ footer a:hover {
    color: #FADCE4;
    transition: all 0.5s;
 }
-
-   
 
 footer h3 {
    font-size: 1.5em;
@@ -644,32 +465,14 @@ footer .hours th {
    color:#4c91a6;
 }
 
-
-
 .container .hours a{
    color:#4c91a6;
 }
 
 .container .hours a i{
    font-size: 30px;
-   /* padding-block-start: 30px; */
    padding-inline-end: 10px;
 }
-
-
-
-
-/* footer .container .hours{
-   padding-block: 20px;
-  }
-
-  footer .container .kontakt{
-   padding-block: 20px;
-  }
-
-  footer .container .call{
-   padding-block: 20px;
-  } */
 
 @media (max-width: 1100px) {
    .container-photogallery .grid-area {
@@ -687,7 +490,11 @@ footer .hours th {
       display: none;
    }
 
-   main section .container-about.lemonade{
+   /* main section .container-about.lemonade{
+      margin-block-start: -19rem;
+   } */
+
+  main .container-offer{
       margin-block-start: -19rem;
    }
 }
@@ -709,30 +516,6 @@ footer .hours th {
 
   
    }
-
-   /* main .container-lemonade {
-      flex-direction: column;
-      width: min-content; */
-
-      /* p {
-         width: 70vw;
-      }
-
-      a {
-         margin-block-start: 10px;
-         align-self: end;
-      } */
-   
-
-   /* main .container-lemonade p {
-      width: 70vw;
-   }
-
-   main .container-lemonade a {
-      margin-block-start: 10px;
-      align-self: end;
-   } */
-/* } */
 
 @media (max-width:800px){
    footer nav ul > .call{
@@ -778,7 +561,7 @@ footer .hours th {
 @media (max-width: 700px) {
 
    header {
-      height: 900px;
+      height: 1100px;
    }
 
    header .container {
@@ -846,18 +629,6 @@ footer .hours th {
    .container-photogallery .grid-area article.colorblock1 h3 {
       font-size: 8vw;
    }
-/* 
-   main section .coffee-container .right {
-      width: 20%;
-   }
-
-   main section .coffee-container .left {
-      width: 80%; */
-
-      /* button {
-         width: 20vw;
-      } */
-   /* } */
 
    main section .coffee-container .left button {
       width: 35vw;
@@ -865,18 +636,28 @@ footer .hours th {
 
    main section .coffee-container .right .line {
       display: none;
+   } 
+
+   .container-offer{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      padding-block: 5px;
+      row-gap: 3rem;
+      column-gap: 0;
+      height: 400px;
    }
 
-   /* .container-photogallery .grid-area {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-      grid-template-rows: repeat(4, minmax(0, 1fr));
-      height: auto;
-      row-gap: 10px;
-   } */
+   .container-offer .grid-item1{
+      padding-inline: 5rem;
+      padding-block: 3rem;
+   }
+}
 
-
-   
+@media (max-width: 500px){
+ 
+   .container-offer .grid-item1{
+      padding-inline: 3rem;
+   }
 }
 
 
-/* FOOTER */
